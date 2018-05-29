@@ -5,7 +5,7 @@
 
  - Modify framework and application code
 
- - Compile Test
+ - Compile, Test
 
 ## Key Directories
 
@@ -15,7 +15,7 @@
  
 
 
-## Add two lines in Engine.cpp 
+## *audiopolicy* service
 
 
 ```diff
@@ -35,9 +35,9 @@
 The change will make the audio output to `WIRED_HEADPHONE`(if headphone is plug in) or `SPEAKER` when output to `REMOTE_SUBMIX`.
 
 
-## Change code in *Recorder* application
+## *Recorder* application
 
-Add a line to *AndroidManifest.xml*.
+Add a line to *AndroidManifest.xml*, then our *Recorder* application will have system permission:
 
 ```diff
 --- a/app/src/main/AndroidManifest.xml
