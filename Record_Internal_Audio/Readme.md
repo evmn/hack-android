@@ -1,11 +1,11 @@
-# Record Internal Audio
+# Record Internal Audio on Andriod 8.1
 
 
  - Download *LineageOS 15.1* source code
 
  - Modify framework and application code
 
- - Compile, Test
+ - Compile, install and test your ROM
 
 ## Key Directories
 
@@ -15,7 +15,7 @@
  
 
 
-## *audiopolicy* service
+## Module *audiopolicy*
 
 
 ```diff
@@ -35,7 +35,7 @@
 The change will make the audio output to `WIRED_HEADPHONE`(if headphone is plug in) or `SPEAKER` when output to `REMOTE_SUBMIX`.
 
 
-## *Recorder* application
+## Module *Recorder*
 
 Add a line to *AndroidManifest.xml*, then our *Recorder* application will have system permission:
 
