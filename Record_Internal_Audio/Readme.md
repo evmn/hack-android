@@ -7,7 +7,7 @@
 
  - Compile Test
 
-## Key Directorys
+## Key Directories
 
  - **A**: `frameworks/av/services/audiopolicy/`
 
@@ -73,9 +73,9 @@ Then change a line in `RecordingDevice.java`, this will change audio source from
 
 
 |AudioSource|Description|
-|:-|:-|
+|:-:|:-|
 |MIC|Microphone audio source |
-|EMOTE_SUBMIX|Audio source for a submix of audio streams to be presented remotely. An application can use this audio source to capture a mix of audio streams that should be transmitted to a remote receiver such as a Wifi display. While recording is active, these audio streams are redirected to the remote submix instead of being played on the device speaker or headset. Certain streams are excluded from the remote submix, including `STREAM_RING`, `STREAM_ALARM`, and `STREAM_NOTIFICATION`. These streams will continue to be presented locally as usual. Capturing the remote submix audio requires the `CAPTURE_AUDIO_OUTPUT` permission. This permission is reserved for use by system components and is not available to third-party applications. Requires the `CAPTURE_AUDIO_OUTPUT` permission.|
+|REMOTE_SUBMIX|Audio source for a submix of audio streams to be presented remotely. An application can use this audio source to capture a mix of audio streams that should be transmitted to a remote receiver such as a Wifi display. While recording is active, these audio streams are redirected to the remote submix instead of being played on the device speaker or headset. Certain streams are excluded from the remote submix, including `STREAM_RING`, `STREAM_ALARM`, and `STREAM_NOTIFICATION`. These streams will continue to be presented locally as usual. Capturing the remote submix audio requires the `CAPTURE_AUDIO_OUTPUT` permission. This permission is reserved for use by system components and is not available to third-party applications. Requires the `CAPTURE_AUDIO_OUTPUT` permission.|
 
 
 
